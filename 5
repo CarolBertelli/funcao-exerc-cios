@@ -1,0 +1,29 @@
+<?php
+function poligono ($lados,$tamanho) {
+    if ($lados == 3) {
+        $tipo = "Triangulo";
+        $perimetro = $lados * $tamanho;
+        return $poligono = [$perimetro,$tipo];
+    }
+    elseif ($lados == 4) {
+        $tipo = "Quadrado";
+        $area = $tamanho ** 2;
+   return $poligono = [$area,$tipo];
+    }
+    elseif ($lados == 5) {
+        $tipo = "Pentágono";
+        return $tipo;
+    }
+}
+echo "Informe a quantidade de lados; ";
+$lados = (int)fgets(STDIN);
+if ($lados == 5) {
+    $poligono = poligono ($lados, 0);
+    echo "$poligono \n";
+}
+else {
+    echo "Informe a medida de um dos lados: ";
+$tamanho = (float)fgets(STDIN);
+$poligono = poligono ($lados,$tamanho);
+echo $poligono[0] . " centímetros. " . $poligono[1] . "\n";
+}

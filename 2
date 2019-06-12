@@ -1,0 +1,16 @@
+<?php
+
+function hipotenusa ($cateto1,$cateto2) {
+
+    $hipotenusa = sqrt($cateto1**2 + $cateto2**2);
+    return $hipotenusa;
+
+}
+
+echo "\nInforme o primeiro cateto: ";
+$cateto1 = (float)fgets(STDIN);
+
+echo "Informe o segundo cateto: ";
+$cateto2 = (float)fgets(STDIN);
+
+$hipotenusa = hipotenusa($cateto1,$cateto2);

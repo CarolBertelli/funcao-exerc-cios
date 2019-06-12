@@ -1,0 +1,8 @@
+ <?php
+function polTocm ($polegadas) {
+    $centimetros = $polegadas * 2.54;
+    return $centimetros;
+}
+echo "Digite o valor em polegadas para ser convertido: ";
+$polegadas = (float)fgets(STDIN);
+echo polTocm ($polegadas);

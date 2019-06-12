@@ -1,0 +1,15 @@
+<?php
+function divisivel ($X,$Y) {
+        $modulo = $X%$Y;
+        if ($modulo == 0) {
+            return "1 \n";
+        }
+        else {
+            return "0 \n";
+        }
+}
+echo "Digite um número: ";
+$X = (int)fgets(STDIN);
+echo "Digite outro número: ";
+$Y = (int)fgets(STDIN);
+echo divisivel ($X,$Y);
